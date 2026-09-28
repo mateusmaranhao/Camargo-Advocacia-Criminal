@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "sans-serif";
+  --font-heading: "Plus Jakarta Sans", "sans-serif";
+  --font-mono: "JetBrains Mono", "monospace";
+
+  /* Paleta oficial do escritório */
+  --color-navy-950: #0D152D; /* Azul-marinho profundo - Cor principal / fundo */
+  --color-navy-900: #18233F; /* Azul-marinho secundário - Variações de fundo */
+  --color-navy-800: #202D50;
+  --color-silver-100: #FFFFFF; /* Branco */
+  --color-silver-200: #E4E5E7;
+  --color-silver-300: #B8B9B9; /* Cinza-prata - Logo, títulos e destaques */
+  --color-silver-400: #9DA0A7;
+  --color-silver-500: #85888F; /* Cinza médio - Texto secundário / detalhes */
+  --color-silver-600: #62656B;
+
+  /* Brand mapped tokens to retain compatibility across components */
+  --color-brand-50: #F0F2F6;
+  --color-brand-100: #DCE0E8;
+  --color-brand-200: #C4CAD7;
+  --color-brand-300: #B8B9B9; /* Cinza-prata */
+  --color-brand-400: #9DA0A7;
+  --color-brand-500: #B8B9B9; /* Cinza-prata */
+  --color-brand-600: #85888F; /* Cinza médio */
+  --color-brand-700: #202D50;
+  --color-brand-800: #18233F; /* Azul-marinho secundário */
+  --color-brand-900: #0D152D; /* Azul-marinho profundo */
+  --color-brand-950: #080D1D;
+
+  --animate-marquee: marquee 30s linear infinite;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: #0D152D;
+    color: #FFFFFF;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.02em;
+  }
+  ::selection {
+    background-color: #B8B9B9;
+    color: #0D152D;
+  }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}

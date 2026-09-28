@@ -1,0 +1,8 @@
+{
+  "name": "Camargo Advocacia Criminal",
+  "description": "Escritório especializado em Direito Criminal em Campinas - SP. Atendimento emergencial 24h para flagrantes, audiência de custódia, inquérito policial e tribunal do júri.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
